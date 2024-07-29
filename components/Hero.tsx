@@ -1,8 +1,13 @@
+'use client'
 import React from 'react'
+import { HeroParallax } from './ui/HeroParallax'
+import { products } from '@/data'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className=''>
+      <HeroParallax products={products}/>
+    </div>
   )
 }
 
