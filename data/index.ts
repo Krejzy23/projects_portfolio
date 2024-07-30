@@ -1,5 +1,5 @@
 export const navItems = [
-    { name: "Home", link: "#home" ,imgURL: "/icons/home.svg", },
+    { name: "Home", link: "#home", imgURL: "/icons/home.svg", },
     { name: "Discover", link: "#discover", imgURL: "/icons/discover.svg", },
     { name: "Contact", link: "#contact", imgURL: "/icons/contact.svg", },
 ];

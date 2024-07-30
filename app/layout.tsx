@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const defaultFont = Playfair_Display({ subsets: ["latin"] });
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={defaultFont.className}>{children}</body>
+      <body className={defaultFont.className}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
+      </body>
     </html>
   );
 }

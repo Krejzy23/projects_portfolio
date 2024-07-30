@@ -87,7 +87,7 @@ export const FloatingNav = ({
                 className="block"
               />
             )}
-            <span className="text-sm cursor-pointer">{navItem.name}</span>
+            <span className="text-md font-thin cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

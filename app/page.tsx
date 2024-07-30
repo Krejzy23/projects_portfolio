@@ -1,3 +1,4 @@
+import Discover from "@/components/Discover";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
@@ -9,6 +10,7 @@ const Home =() => {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <Discover />
       </div>
     </main>
     
