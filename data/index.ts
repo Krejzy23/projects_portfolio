@@ -1,3 +1,6 @@
+'use client'
+
+
 export const navItems = [
     { name: "Home", link: "#home", imgURL: "/icons/home.svg", },
     { name: "Discover", link: "#discover", imgURL: "/icons/discover.svg", },
@@ -99,3 +102,4 @@ export const products = [
             "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
     },
 ];
+
