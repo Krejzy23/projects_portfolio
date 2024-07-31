@@ -35,9 +35,9 @@ export const products = [
     },
     {
         title: "Editrix AI",
-        link: "https://editrix.ai",
+        link: "https://live-text-three.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+            "/images/live.png",
     },
     {
         title: "BrainWave",
@@ -53,35 +53,35 @@ export const products = [
             "/images/iphonepro.png",
     },
     {
-        title: "Aceternity UI",
-        link: "https://ui.aceternity.com",
+        title: "Podcast",
+        link: "https://podcastr-app-ten.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+            "/images/podcast.png",
     },
     {
-        title: "Tailwind Master Kit",
+        title: "Image Ai",
         link: "https://image-ai-nu.vercel.app/",
         thumbnail:
             "/images/image.png",
     },
     {
-        title: "SmartBridge",
-        link: "https://smartbridgetech.com",
+        title: "KrejzyVerse Metaverse",
+        link: "https://krejzy-verse.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+            "/images/meta.png",
     },
     {
-        title: "Renderwork Studio",
-        link: "https://renderwork.studio",
+        title: "3D Japan Bistro",
+        link: "https://3-d-sushi-ramen-bistro.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+            "/images/bistro.png",
     },
 
     {
-        title: "Creme Digital",
-        link: "https://cremedigital.com",
+        title: "Blog",
+        link: "https://mern-blog-gmho.onrender.com/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+            "/images/blog.png",
     },
     {
         title: "Barber",
@@ -96,10 +96,10 @@ export const products = [
             "/images/trip.png",
     },
     {
-        title: "E Free Invoice",
-        link: "https://efreeinvoice.com",
+        title: "Clinic Reserve",
+        link: "https://clinic-reserve.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+            "/images/clinic.png",
     },
 ];
 

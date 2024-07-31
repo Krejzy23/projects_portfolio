@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [
-            'aceternity.com',
-            "api.microlink.io"
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'api.microlink.io',
+                pathname: '/**',
+            },
         ],
     },
 };
