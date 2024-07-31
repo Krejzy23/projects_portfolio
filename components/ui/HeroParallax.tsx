@@ -61,7 +61,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[350vh] py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="lg:h-[350vh] h-[260vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -107,13 +107,13 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-semibold dark:text-white">
+    <div className="max-w-7xl tracking-wider relative mx-auto py-10 md:py-20 px-4 w-full left-0 top-0">
+      <h1 className="text-2xl md:text-4xl xl:text-7xl font-semibold dark:text-white">
         The Ultimate <br />
         <span className="bg-secondary-color font-bold">Projects</span> review
         page
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-black">
+      <p className="max-w-2xl text-base text-md md:text-2xl xl:text-3xl mt-8 dark:text-neutral-200 text-black">
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
@@ -136,7 +136,7 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
       whileHover={{
         y: -20,
       }}
-      className="group/product h-64 w-[15rem] md:h-80 md:w-[20rem] lg:h-96 lg:w-[25rem] xl:h-[30rem] xl:w-[35rem] relative flex-shrink-0"
+      className="group/product h-64 w-[15rem] md:h-[20rem] md:w-[20rem] lg:h-96 lg:w-[25rem] xl:h-[30rem] xl:w-[35rem] relative flex-shrink-0"
     >
       <Link
         href={product.link}
