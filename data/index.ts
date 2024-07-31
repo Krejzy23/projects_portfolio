@@ -9,29 +9,29 @@ export const navItems = [
 
 export const products = [
     {
-        title: "Moonbeam",
-        link: "https://gomoonbeam.com",
+        title: "AI Summerizer",
+        link: "https://summarizer-ai-psi.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "/images/summ.png",
     },
     {
-        title: "Cursor",
-        link: "https://cursor.so",
+        title: "Photo",
+        link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "/images/photo.png",
     },
     {
-        title: "Rogue",
-        link: "https://userogue.com",
+        title: "Evently",
+        link: "https://events-platform-mu.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+            "/images/evently.png",
     },
 
     {
-        title: "Editorially",
-        link: "https://editorially.org",
+        title: "AI Summerizer",
+        link: "https://summarizer-ai-psi.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+            "/images/summ.png",
     },
     {
         title: "Editrix AI",

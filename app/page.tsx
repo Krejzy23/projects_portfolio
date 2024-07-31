@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact";
 import Discover from "@/components/Discover";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
@@ -13,6 +14,7 @@ const Home =() => {
         <Hero />
         <Contact />
         <Discover />
+        <Footer />
       </div>
     </main>
     
