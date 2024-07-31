@@ -9,12 +9,12 @@ const Discover = () => {
       id="discover"
       className="relative"
     >
-      <div className="max-w-7xl relative mx-auto md:py-40 px-4 w-full left-0 top-0">
-        <h1 className="text-2xl md:text-7xl font-semibold dark:text-white">
+      <div className="max-w-7xl relative mx-auto md:py-10 px-4 w-full left-0 top-0 tracking-wider">
+        <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold dark:text-white">
           Contact Me <br /> and let's talk about{" "}
           <span className="bg-secondary-color font-bold">Collaboration</span>
         </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+        <p className="dark:text-neutral-400 text-md md:text-lg lg:text-xl xl:text-2xl max-w-7xl mx-auto mt-2 mb-10">
           I create beautiful, cutting-edge products using the latest
           technologies and frameworks. Explore my website and applications to
           discover tools that can make your daily life much easier!

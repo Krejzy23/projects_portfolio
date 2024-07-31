@@ -6,19 +6,19 @@ export const navItems = [
 
 export const products = [
     {
-        title: "AI Summerizer",
+        title: "AI Summerizer Application",
         link: "https://summarizer-ai-psi.vercel.app/",
         thumbnail:
             "/images/summ.png",
     },
     {
-        title: "Photo",
+        title: "Photographer portfolio",
         link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
             "/images/photograph.png",
     },
     {
-        title: "Evently",
+        title: "Evently Application",
         link: "https://events-platform-mu.vercel.app/",
         thumbnail:
             "/images/event.png",
@@ -37,7 +37,7 @@ export const products = [
             "/images/live.png",
     },
     {
-        title: "IPhone15Pro",
+        title: "IPhone15 Pro UI/UIX",
         link: "https://i-phone15-pro.vercel.app/",
         thumbnail:
             "/images/iphonepro.png",
@@ -49,19 +49,19 @@ export const products = [
             "/images/brainwave.png",
     },
     {
-        title: "Podcast",
+        title: "Podcast Application",
         link: "https://podcastr-app-ten.vercel.app/",
         thumbnail:
             "/images/podcast.png",
     },
     {
-        title: "Image Ai",
+        title: "Image Ai Application",
         link: "https://image-ai-nu.vercel.app/",
         thumbnail:
             "/images/image.png",
     },
     {
-        title: "KrejzyVerse Metaverse",
+        title: "KrejzyVerse Metaverse UI/UIX",
         link: "https://krejzy-verse.vercel.app/",
         thumbnail:
             "/images/meta.png",
@@ -74,25 +74,25 @@ export const products = [
     },
 
     {
-        title: "Blog",
+        title: "Blog Application",
         link: "https://mern-blog-gmho.onrender.com/",
         thumbnail:
             "/images/blog.png",
     },
     {
-        title: "Barber",
+        title: "Barber Website",
         link: "https://barber-portfolio.vercel.app/",
         thumbnail:
             "/images/barber.png",
     },
     {
-        title: "Trip List",
+        title: "Trip List Application",
         link: "https://trip-list-3-d.vercel.app/",
         thumbnail:
             "/images/trip.png",
     },
     {
-        title: "Clinic Reserve",
+        title: "Clinic Reserve Application",
         link: "https://clinic-reserve.vercel.app/",
         thumbnail:
             "/images/clinic.png",
