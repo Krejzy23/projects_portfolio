@@ -18,13 +18,13 @@ export const products = [
         title: "Photo",
         link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
-            "/images/photo.png",
+            "/images/photograph.png",
     },
     {
         title: "Evently",
         link: "https://events-platform-mu.vercel.app/",
         thumbnail:
-            "/images/evently.png",
+            "/images/event.png",
     },
 
     {
@@ -40,17 +40,17 @@ export const products = [
             "https://aceternity.com/images/products/thumbnails/new/editrix.png",
     },
     {
-        title: "Pixel Perfect",
-        link: "https://app.pixelperfect.quest",
+        title: "BrainWave",
+        link: "https://brainwave-ui-uix.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "/images/brainwave.png",
     },
 
     {
-        title: "Algochurn",
-        link: "https://algochurn.com",
+        title: "IPhone15Pro",
+        link: "https://i-phone15-pro.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+            "/images/iphonepro.png",
     },
     {
         title: "Aceternity UI",
@@ -60,9 +60,9 @@ export const products = [
     },
     {
         title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
+        link: "https://image-ai-nu.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+            "/images/image.png",
     },
     {
         title: "SmartBridge",
@@ -84,16 +84,16 @@ export const products = [
             "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
     },
     {
-        title: "Golden Bells Academy",
-        link: "https://goldenbellsacademy.com",
+        title: "Barber",
+        link: "https://barber-portfolio.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+            "/images/barber.png",
     },
     {
-        title: "Invoker Labs",
-        link: "https://invoker.lol",
+        title: "Task Flow",
+        link: "https://taskflow-murex.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+            "/images/task.png",
     },
     {
         title: "E Free Invoice",
