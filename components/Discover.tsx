@@ -7,8 +7,7 @@ const Discover = () => {
   return (
     <section
       id="discover"
-      className="
-    "
+      className="relative"
     >
       <div className="max-w-7xl relative mx-auto md:py-40 px-4 w-full left-0 top-0">
         <h1 className="text-2xl md:text-7xl font-semibold dark:text-white">

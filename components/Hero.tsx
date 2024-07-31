@@ -5,7 +5,7 @@ import { products } from '@/data'
 
 const Hero = () => {
   return (
-    <div className=''>
+    <div>
       <HeroParallax products={products}/>
     </div>
   )

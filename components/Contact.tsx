@@ -3,7 +3,7 @@ import { LinkPreview } from "./ui/ContactLink";
 
 const Contact = () => {
   return (
-    <section id="contact" className="">
+    <section id="contact" className="relative">
       <div className="max-w-7xl relative mx-auto px-4 w-full left-0 top-0">
         <div className="flex tracking-wider justify-center items-center h-[40rem] flex-col px-4">
           <h1 className="text-2xl md:text-4xl font-semibold dark:text-white ">
