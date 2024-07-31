@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
- 
+
 type LinkPreviewProps = {
   children: React.ReactNode;
   url: string;
@@ -24,7 +24,7 @@ type LinkPreviewProps = {
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
 );
- 
+
 export const LinkPreview = ({
   children,
   url,
@@ -53,27 +53,27 @@ export const LinkPreview = ({
   } else {
     src = imageSrc;
   }
- 
+
   const [isOpen, setOpen] = React.useState(false);
- 
+
   const [isMounted, setIsMounted] = React.useState(false);
- 
+
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
- 
+
   const springConfig = { stiffness: 100, damping: 15 };
   const x = useMotionValue(0);
- 
+
   const translateX = useSpring(x, springConfig);
- 
+
   const handleMouseMove = (event: any) => {
     const targetRect = event.target.getBoundingClientRect();
     const eventOffsetX = event.clientX - targetRect.left;
     const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
     x.set(offsetFromCenter);
   };
- 
+
   return (
     <>
       {isMounted ? (
@@ -89,7 +89,7 @@ export const LinkPreview = ({
           />
         </div>
       ) : null}
- 
+
       <HoverCardPrimitive.Root
         openDelay={50}
         closeDelay={100}
@@ -99,12 +99,12 @@ export const LinkPreview = ({
       >
         <HoverCardPrimitive.Trigger
           onMouseMove={handleMouseMove}
-          className={cn("text-black dark:text-white", className)}
+          className={cn("bg-secondary-color dark:text-white", className)}
           href={url}
         >
           {children}
         </HoverCardPrimitive.Trigger>
- 
+
         <HoverCardPrimitive.Content
           className="[transform-origin:var(--radix-hover-card-content-transform-origin)]"
           side="top"
