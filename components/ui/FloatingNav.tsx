@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import {
   motion,
@@ -87,7 +88,9 @@ export const FloatingNav = ({
                 className="block"
               />
             )}
-            <span className="text-md font-thin cursor-pointer">{navItem.name}</span>
+            <span className="text-md font-thin cursor-pointer">
+              {navItem.name}
+            </span>
           </Link>
         ))}
       </motion.div>

@@ -31,23 +31,22 @@ export const products = [
             "/images/anime.png",
     },
     {
-        title: "Editrix AI",
+        title: "Live Text Application",
         link: "https://live-text-three.vercel.app/",
         thumbnail:
             "/images/live.png",
     },
     {
-        title: "BrainWave",
-        link: "https://brainwave-ui-uix.vercel.app/",
-        thumbnail:
-            "/images/brainwave.png",
-    },
-
-    {
         title: "IPhone15Pro",
         link: "https://i-phone15-pro.vercel.app/",
         thumbnail:
             "/images/iphonepro.png",
+    },
+    {
+        title: "BrainWave UI/UIX",
+        link: "https://brainwave-ui-uix.vercel.app/",
+        thumbnail:
+            "/images/brainwave.png",
     },
     {
         title: "Podcast",
