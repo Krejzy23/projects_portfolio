@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Discover from "@/components/Discover";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
@@ -11,6 +12,7 @@ const Home =() => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Discover />
+        <Contact />
       </div>
     </main>
     
