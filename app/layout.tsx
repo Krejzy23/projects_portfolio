@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes";
 const defaultFont = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AK_Projects",
+  title: "Projects",
   description: "My recent projects page",
 };
 
