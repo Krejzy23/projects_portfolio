@@ -28,10 +28,10 @@ export const products = [
     },
 
     {
-        title: "AI Summerizer",
-        link: "https://summarizer-ai-psi.vercel.app/",
+        title: "Anime List",
+        link: "https://anime-list-beige.vercel.app/",
         thumbnail:
-            "/images/summ.png",
+            "/images/anime.png",
     },
     {
         title: "Editrix AI",
@@ -90,10 +90,10 @@ export const products = [
             "/images/barber.png",
     },
     {
-        title: "Task Flow",
-        link: "https://taskflow-murex.vercel.app/",
+        title: "Trip List",
+        link: "https://trip-list-3-d.vercel.app/",
         thumbnail:
-            "/images/task.png",
+            "/images/trip.png",
     },
     {
         title: "E Free Invoice",
