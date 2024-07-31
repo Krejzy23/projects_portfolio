@@ -75,7 +75,7 @@ export const LinkPreview = ({
 
   return (
     <>
-      {isMounted ? (
+      {/* {isMounted ? (
         <div className="hidden">
           <Image
             src={src}
@@ -87,7 +87,7 @@ export const LinkPreview = ({
             alt="hidden image"
           />
         </div>
-      ) : null}
+      ) : null} */}
 
       <HoverCardPrimitive.Root
         openDelay={50}
