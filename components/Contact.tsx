@@ -10,7 +10,8 @@ const Contact = () => {
             Take the little time to Discover my works...
           </h1>
           <p className="dark:text-neutral-400 text-xl md:text-3xl max-w-5xl mx-auto mt-2 mb-10">
-            Let's create beautiful, cutting-edge products together using the latest technologies and frameworks. Explore my{" "}
+            Let's create beautiful, cutting-edge products together using the
+            latest technologies and frameworks. Explore my{" "}
             <span className="font-semibold">
               <LinkPreview url="https://minimalist-portfolio-navy.vercel.app/">
                 portfolio
@@ -22,7 +23,8 @@ const Contact = () => {
                 daily life.
               </LinkPreview>
             </span>{" "}
-            I'm a web developer open to new opportunities and collaborations. Reach out to discuss your projects or just to{" "}
+            I'm a web developer open to new opportunities and collaborations.
+            Reach out to discuss your projects or just to{" "}
             <span className="font-bold">
               <LinkPreview url="https://developer-portfolio-green.vercel.app/contact">
                 connect!
