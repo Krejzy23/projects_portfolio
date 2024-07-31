@@ -1,3 +1,5 @@
+"use client"
+
 import Contact from "@/components/Contact";
 import Discover from "@/components/Discover";
 import Footer from "@/components/Footer";
