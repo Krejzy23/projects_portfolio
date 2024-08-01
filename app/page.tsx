@@ -3,10 +3,12 @@
 import Contact from "@/components/Contact";
 import Discover from "@/components/Discover";
 import Footer from "@/components/Footer";
+import { GoogleGeminiEffectDemo } from "@/components/GoogleGeminiEffect";
+
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
+
 
 const Home =() => {
   return (
@@ -16,6 +18,7 @@ const Home =() => {
         <Hero />
         <Contact />
         <Discover />
+        <GoogleGeminiEffectDemo />
         <Footer />
       </div>
     </main>

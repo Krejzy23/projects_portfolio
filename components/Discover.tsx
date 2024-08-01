@@ -18,7 +18,7 @@ const Discover = () => {
           technologies and frameworks. Explore my website and applications to
           discover tools that can make your daily life much easier!
         </p>
-          <Features />
+        <Features />
       </div>
     </section>
   );
