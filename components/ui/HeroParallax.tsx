@@ -61,7 +61,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[350vh] h-[260vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="lg:h-[350vh] md:h-[295vh] h-[265vh] py-72 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] md:perspektive:800px] md:py-32 lg:py-10 xl:py-2[transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -73,7 +73,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse mb-5 space-x-5 lg:space-x-20 md:mb-10 md:space-x-10 lg:mb-20 ">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -82,7 +82,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-20 space-x-20">
+        <motion.div className="flex flex-row mb-5 space-x-5 md:mb-10 md:space-x-10 lg:mb-20 lg:space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -91,7 +91,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse mb-5 space-x-5 space-x-reverse md:mb-10 md:space-x-10 lg:space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -114,7 +114,7 @@ export const Header = () => {
         page
       </h1>
       <p className="max-w-2xl text-base text-md md:text-2xl xl:text-3xl mt-8 dark:text-neutral-200 text-black">
-      "Explore innovative projects crafted with the latest technologies and frameworks. These works embody a dedication to excellence and creativity in development and design.
+      "Explore innovative projects crafted with the latest technologies and frameworks. These works embody a dedication to excellence and creativity in development and design."
       </p>
     </div>
   );

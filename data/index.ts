@@ -6,24 +6,23 @@ export const navItems = [
 
 export const products = [
     {
-        title: "AI Summerizer Application",
-        link: "https://summarizer-ai-psi.vercel.app/",
+        title: "Evently Application",
+        link: "https://events-platform-mu.vercel.app/",
         thumbnail:
-            "/images/summ.png",
+            "/images/eventl.png",
     },
     {
         title: "Photographer portfolio",
         link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
-            "/images/photograph.png",
+        "/images/photo.png",
     },
     {
-        title: "Evently Application",
-        link: "https://events-platform-mu.vercel.app/",
+        title: "AI Summerizer Application",
+        link: "https://summarizer-ai-psi.vercel.app/",
         thumbnail:
-            "/images/event.png",
+            "/images/sumz.png",
     },
-
     {
         title: "Anime List",
         link: "https://anime-list-beige.vercel.app/",
