@@ -97,4 +97,3 @@ export const products = [
             "/images/clinic.png",
     },
 ];
-

@@ -10,6 +10,11 @@ const nextConfig = {
                 hostname: 'api.microlink.io',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'pbs.twimg.com',
+                pathname: '/**',
+            },
         ],
     },
 };

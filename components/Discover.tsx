@@ -2,6 +2,9 @@
 
 import React from "react";
 import { Features } from "./ui/TextHover";
+import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { cn } from "@/lib/utils";
+import {items} from "./Review"; // Import items from the Review file
 
 const Discover = () => {
   return (
@@ -18,7 +21,19 @@ const Discover = () => {
           technologies and frameworks. Explore my website and applications to
           discover tools that can make your daily life much easier!
         </p>
-        <Features />
+        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+          {items && items.map((item, i) => (
+            <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+            />
+            ))}
+        </BentoGrid>
+            <Features />
       </div>
     </section>
   );
