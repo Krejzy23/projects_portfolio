@@ -12,22 +12,6 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BentoGridThirdDemo() {
-  return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
-  );
-}
 
 const SkeletonOne = () => {
   const variants = {
@@ -63,16 +47,20 @@ const SkeletonOne = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
+        <p className="flex items-center justify-center text-xs">Hello</p>
+        </div>
       </motion.div>
       <motion.div
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
+          <p className="flex items-center justify-center text-xs">Hi 🙂</p>
+        </div>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
       <motion.div
@@ -80,7 +68,9 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
+          <p className="flex items-center justify-center text-xs">Need promo site,can you help?</p>
+        </div>
       </motion.div>
     </motion.div>
   );
@@ -236,72 +226,82 @@ const SkeletonFour = () => {
     </motion.div>
   );
 };
-const SkeletonFive = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
 
-  return (
-    <motion.div
-      initial="initial"
-      whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
-    >
+const SkeletonFive = () => {
+    const variants = {
+      initial: {
+        x: 0,
+      },
+      animate: {
+        x: 5,
+        rotate: 1,
+        transition: {
+          duration: 0.2,
+        },
+      },
+    };
+    const variantsSecond = {
+      initial: {
+        x: 0,
+      },
+      animate: {
+        x: -10,
+        rotate: -5,
+        transition: {
+          duration: 0.2,
+        },
+      },
+    };
+  
+    return (
       <motion.div
-        variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        initial="initial"
+        whileHover="animate"
+        className={cn(
+          "flex flex-1 w-full h-full min-h-[6rem] flex-col space-y-2",
+          "relative overflow-hidden",
+          "group cursor-pointer",
+          "bg-white bg-cover dark:bg-black"
+        )}
       >
-        <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
-        <p className="text-xs text-neutral-500">
-          Hi I need an eshop with integrated payment,tax and delivery system. I need to fit in 1000 Euros.
-          
-          Can we make deal?
-        </p>
+        <motion.div
+          variants={variants}
+          className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black relative z-10"
+        >
+          <Image
+            src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+            alt="avatar"
+            height="100"
+            width="100"
+            className="rounded-full h-10 w-10"
+          />
+          <p className="text-xs text-neutral-500">
+            Hi I need an eshop with integrated payment, tax and delivery system. I need to fit in 1000 Euros.
+            Can we make a deal?
+          </p>
+        </motion.div>
+        <motion.div
+          variants={variantsSecond}
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black relative z-10"
+        >
+          <p className="text-xs text-neutral-500">If you add two zeros, yes.😂.</p>
+          <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        </motion.div>
+        <div className={cn(
+          "hidden md:flex absolute inset-0 bg-cover bg-center z-10",
+          "bg-[url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif)]",
+          "opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        )}></div>
       </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <p className="text-xs text-neutral-500">If you add two zeros, yes.😂.</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
-    </motion.div>
-  );
-};
+    );
+  };
 
 export const items = [
   {
-    title: "AI Content Generation",
+    title: "Simple communications",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        Don't hesitate to call or send email.
       </span>
     ),
     header: <SkeletonOne />,

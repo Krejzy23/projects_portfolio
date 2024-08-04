@@ -9,9 +9,9 @@ import {items} from "./Review"; // Import items from the Review file
 const Discover = () => {
   return (
     <section id="discover" className="relative">
-      <div className="max-w-7xl relative mx-auto md:py-10 px-4 w-full left-0 top-0 tracking-wider">
-        <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold dark:text-white">
-          Contact Me <br /> and let's talk about{" "}
+      <div className="max-w-5xl relative mx-auto md:py-10 px-4 w-full left-0 top-0 tracking-wider">
+        <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold dark:text-white ">
+          Contact Me and let's talk about{" "}
           <span className="bg-secondary-color font-bold text-stroker-1">
             Collaboration
           </span>
