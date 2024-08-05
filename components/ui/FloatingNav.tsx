@@ -10,6 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
+import { Button, MovingBorder } from "./MovingBorder";
 
 export const FloatingNav = ({
   navItems,
@@ -18,7 +19,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    imgURL?: string; // Updated to imgURL
+    imgURL?: string;
   }[];
   className?: string;
 }) => {
@@ -60,38 +61,37 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit lg:min-w-fit fixed z-[5000] top-5 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+          "flex items-center justify-center space-x-4 bg-secondary-color max-w-fit md:min-w-fit fixed z-[5000] top-5 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
           className
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
           backgroundColor: "rgb(253,253,255)",
-          borderRadius: "1px",
+          borderRadius: "1rem",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
         {navItems.map((navItem, idx) => (
-          <Link
+          <Button
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 justify-center items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:bg-secondary-color"
+              "relative justify-center items-center flex-col space-x-1 bg-white hover:bg-secondary-color dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             )}
-            style={{ color: "#000000" }} // Change this color to your desired color
           >
             {navItem.imgURL && (
               <Image
                 src={navItem.imgURL}
-                alt={`${navItem.name} icon`}
+                alt={`${navItem.name}icon`}
                 width={24}
                 height={24}
                 className="block"
               />
             )}
-            <span className="text-sm md:text-md lg:text-lg xl:text-xl font-light cursor-pointer">
+            <span className="hidden lg:flex lg:text-sm xl:text-md font-light cursor-pointer">
               {navItem.name}
             </span>
-          </Link>
+          </Button>
         ))}
       </motion.div>
     </AnimatePresence>
