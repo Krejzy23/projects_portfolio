@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <div>
         Footer
-        <ThemeSwitch />
         <br/>
         <br/>
         <br/>

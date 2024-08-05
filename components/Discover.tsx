@@ -33,7 +33,7 @@ const Discover = () => {
             />
             ))}
         </BentoGrid>
-            <Features />
+        <Features />
       </div>
     </section>
   );

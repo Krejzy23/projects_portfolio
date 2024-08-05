@@ -2,6 +2,7 @@
 
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
+import { IconSun, IconMoon } from '@tabler/icons-react';
 
 export default function ThemeSwitch() {
 
@@ -12,7 +13,7 @@ export default function ThemeSwitch() {
   useEffect(() => {
     setMounted(true)
   },[])
-
+  
   const toggleTheme = () => {
     if( theme === 'dark') {
       setTheme("light");
@@ -24,7 +25,7 @@ export default function ThemeSwitch() {
   if(!mounted) return null
 
   return (
-    <button onClick={toggleTheme}>Zmenit theme</button>
+    <button onClick={toggleTheme}>{theme === 'dark' ? <IconSun /> : <IconMoon />}</button>
   )
 }
 
