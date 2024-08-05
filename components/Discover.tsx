@@ -4,13 +4,13 @@ import React from "react";
 import { Features } from "./ui/TextHover";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { cn } from "@/lib/utils";
-import {items} from "./Review"; // Import items from the Review file
+import { items } from "./Review"; // Import items from the Review file
 
 const Discover = () => {
   return (
     <section id="discover" className="relative">
-      <div className="max-w-5xl relative mx-auto md:py-10 px-4 w-full left-0 top-0 tracking-wider">
-        <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold dark:text-white ">
+      <div className="max-w-5xl relative mx-auto md:py-10 px-4 w-full mt-10 left-0 top-0 tracking-wider">
+        <h1 className="text-start text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold dark:text-white ">
           Contact Me and let's talk about{" "}
           <span className="bg-secondary-color font-bold text-stroker-1">
             Collaboration
@@ -22,15 +22,16 @@ const Discover = () => {
           discover tools that can make your daily life much easier!
         </p>
         <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
-          {items && items.map((item, i) => (
-            <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            className={cn("[&>p:text-lg]", item.className)}
-            icon={item.icon}
-            />
+          {items &&
+            items.map((item, i) => (
+              <BentoGridItem
+                key={i}
+                title={item.title}
+                description={item.description}
+                header={item.header}
+                className={cn("[&>p:text-lg]", item.className)}
+                icon={item.icon}
+              />
             ))}
         </BentoGrid>
         <Features />

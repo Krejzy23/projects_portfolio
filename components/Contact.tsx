@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="relative">
       <div className="max-w-7xl relative mx-auto px-2 w-full left-0 top-0">
         <div className="flex tracking-wider justify-center items-center h-[40rem] flex-col px-4 ">
-          <h1 className="text-start text-lg md:text-xl lg:text-3xl xl:text-4xl font-bold dark:text-white">
+          <h1 className="text-start text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold dark:text-white">
             Take the little time to Discover my works...
           </h1>
           <p className="dark:text-neutral-400 text-md md:text-lg lg:text-xl xl:text-2xl max-w-5xl mx-auto mt-2 mb-10">
