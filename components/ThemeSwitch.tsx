@@ -7,14 +7,14 @@ export default function ThemeSwitch() {
 
   const [mounted, setMounted] = useState(false);
 
-  const [ resolvedTheme, setTheme ] = useTheme();
+  const { theme, setTheme }  = useTheme();
 
   useEffect(() => {
     setMounted(true)
   },[])
 
   const toggleTheme = () => {
-    if(resolvedTheme === 'dark') {
+    if( theme === 'dark') {
       setTheme("light");
     } else {
       setTheme("dark")
@@ -24,7 +24,7 @@ export default function ThemeSwitch() {
   if(!mounted) return null
 
   return (
-    <button>Zmenit theme</button>
+    <button onClick={toggleTheme}>Zmenit theme</button>
   )
 }
 
