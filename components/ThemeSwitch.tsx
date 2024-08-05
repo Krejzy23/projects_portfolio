@@ -28,7 +28,7 @@ export default function ThemeSwitch() {
   return (
     <Button 
       borderRadius="1rem"
-      className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800" onClick={toggleTheme}>{theme === 'dark' ? <IconSun /> : <IconMoon />}
+      className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800" onClick={toggleTheme}>{theme === 'dark' ? <IconSun className='h-4 w-4 md:w-6 md:h-6 lg:w-8 lg:h-8'/> : <IconMoon className='h-4 w-4 md:w-6 md:h-6 lg:w-8 lg:h-8' />}
     </Button>
   )
 }
