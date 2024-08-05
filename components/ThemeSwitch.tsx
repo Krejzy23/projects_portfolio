@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
 import { IconSun, IconMoon } from '@tabler/icons-react';
+import { Button } from './ui/MovingBorder';
 
 export default function ThemeSwitch() {
 
@@ -25,7 +26,10 @@ export default function ThemeSwitch() {
   if(!mounted) return null
 
   return (
-    <button onClick={toggleTheme}>{theme === 'dark' ? <IconSun /> : <IconMoon />}</button>
+    <Button 
+      borderRadius="1rem"
+      className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800" onClick={toggleTheme}>{theme === 'dark' ? <IconSun /> : <IconMoon />}
+    </Button>
   )
 }
 

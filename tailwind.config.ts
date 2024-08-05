@@ -1,12 +1,26 @@
-import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config: Config = { 
+const addVariablesForColors = ({ addBase, theme }: any) => {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+};
+
+const config: Config = {
   darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -32,7 +46,7 @@ const config: Config = {
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
         },
-        '.text-stroker-1' : {
+        '.text-stroker-1': {
           '-webkit-text-stroke-width': '0.5px',
         },
         '.text-stroke-custom': {
@@ -40,6 +54,7 @@ const config: Config = {
         },
       });
     },
+    addVariablesForColors,
   ],
 };
 
