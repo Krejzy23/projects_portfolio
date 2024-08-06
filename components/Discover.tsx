@@ -21,7 +21,7 @@ const Discover = () => {
           technologies and frameworks. Explore my website and applications to
           discover tools that can make your daily life much easier!
         </p>
-        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+        <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
           {items &&
             items.map((item, i) => (
               <BentoGridItem

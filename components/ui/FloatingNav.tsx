@@ -10,7 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { Button, MovingBorder } from "./MovingBorder";
+import { Button } from "./MovingBorder";
 
 export const FloatingNav = ({
   navItems,
@@ -76,6 +76,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             as={Link}
             href={navItem.link}
+            alt={navItem.name}
             className={cn(
               "relative justify-center items-center flex-col space-x-1 bg-white hover:bg-secondary-color dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             )}

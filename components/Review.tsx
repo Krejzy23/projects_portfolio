@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import {
   IconBoxAlignRightFilled,
   IconClipboardCopy,
@@ -11,7 +10,6 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 
 const SkeletonOne = () => {
   const variants = {
@@ -50,15 +48,15 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
-        <p className="flex items-center justify-center text-xs">Hello</p>
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
+          <p className="flex items-center justify-center text-xs">Hello</p>
         </div>
       </motion.div>
       <motion.div
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
           <p className="flex items-center justify-center text-xs">Hi 🙂</p>
         </div>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
@@ -68,8 +66,10 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900" >
-          <p className="flex items-center justify-center text-xs">Need promo site,can you help?</p>
+        <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
+          <p className="flex items-center justify-center text-xs">
+            Need promo site,can you help?
+          </p>
         </div>
       </motion.div>
     </motion.div>
@@ -80,7 +80,9 @@ const SkeletonTwo = () => {
 
   useEffect(() => {
     // Generování náhodných hodnot pouze na klientské straně
-    const newWidths = new Array(6).fill(0).map(() => Math.random() * (100 - 40) + 40);
+    const newWidths = new Array(6)
+      .fill(0)
+      .map(() => Math.random() * (100 - 40) + 40);
     setWidths(newWidths);
   }, []);
 
@@ -122,6 +124,7 @@ const SkeletonTwo = () => {
     </motion.div>
   );
 };
+
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -236,81 +239,83 @@ const SkeletonFour = () => {
 };
 
 const SkeletonFive = () => {
-    const variants = {
-      initial: {
-        x: 0,
+  const variants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: 5,
+      rotate: 1,
+      transition: {
+        duration: 0.2,
       },
-      animate: {
-        x: 5,
-        rotate: 1,
-        transition: {
-          duration: 0.2,
-        },
+    },
+  };
+  const variantsSecond = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: -10,
+      rotate: -5,
+      transition: {
+        duration: 0.2,
       },
-    };
-    const variantsSecond = {
-      initial: {
-        x: 0,
-      },
-      animate: {
-        x: -10,
-        rotate: -5,
-        transition: {
-          duration: 0.2,
-        },
-      },
-    };
-  
-    return (
+    },
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      whileHover="animate"
+      className={cn(
+        "flex flex-1 w-full h-full min-h-[6rem] flex-col space-y-2",
+        "relative overflow-hidden",
+        "group cursor-pointer",
+        "bg-white bg-cover dark:bg-black"
+      )}
+    >
       <motion.div
-        initial="initial"
-        whileHover="animate"
-        className={cn(
-          "flex flex-1 w-full h-full min-h-[6rem] flex-col space-y-2",
-          "relative overflow-hidden",
-          "group cursor-pointer",
-          "bg-white bg-cover dark:bg-black"
-        )}
+        variants={variants}
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black relative z-10"
       >
-        <motion.div
-          variants={variants}
-          className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black relative z-10"
-        >
-          <Image
-            src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
-            alt="avatar"
-            height="100"
-            width="100"
-            className="rounded-full h-10 w-10"
-          />
-          <p className="text-xs text-neutral-500">
-            Hi I need an eshop with integrated payment, tax and delivery system. I need to fit in 1000 Euros.
-            Can we make a deal?
-          </p>
-        </motion.div>
-        <motion.div
-          variants={variantsSecond}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black relative z-10"
-        >
-          <p className="text-xs text-neutral-500">If you add two zeros, yes.😂.</p>
-          <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        </motion.div>
-        <div className={cn(
+        <Image
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-10 w-10"
+        />
+        <p className="text-xs text-neutral-500">
+          Hi I need an eshop with integrated payment, tax and delivery system. I
+          need to fit in 1000 Euros. Can we make a deal?
+        </p>
+      </motion.div>
+      <motion.div
+        variants={variantsSecond}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black relative z-10"
+      >
+        <p className="text-xs text-neutral-500">
+          If you add two zeros, yes.😂.
+        </p>
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+      </motion.div>
+      <div
+        className={cn(
           "hidden md:flex absolute inset-0 bg-cover bg-center z-10",
           "bg-[url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif)]",
           "opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        )}></div>
-      </motion.div>
-    );
-  };
+        )}
+      ></div>
+    </motion.div>
+  );
+};
 
 export const items = [
   {
     title: "Simple communications",
     description: (
-      <span className="text-sm">
-        Don't hesitate to call or send email.
-      </span>
+      <span className="text-sm">Don't hesitate to call or send email.</span>
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
@@ -320,7 +325,7 @@ export const items = [
     title: "Automated Proofreading",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        Integrated AI for better user experience.
       </span>
     ),
     header: <SkeletonTwo />,

@@ -28,6 +28,7 @@ export default function ThemeSwitch() {
     <Button
       borderRadius="1rem"
       className="bg-white hover:bg-secondary-color dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+      aria-label="Toggle theme"
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
