@@ -97,3 +97,26 @@ export const products = [
             "/images/clinic.png",
     },
 ];
+
+export const socialMedia = [
+    {
+      id:1,
+      img:"/icons/git.svg",
+      link:"https://github.com/Krejzy23",
+    },
+    {
+      id:2,
+      img:"/icons/whats.svg",
+      link:"",
+    },
+    {
+      id:3,
+      img:"/icons/gmail.svg",
+      link:"",
+    },
+    {
+      id:4,
+      img:"/icons/ver.svg",
+      link:"https://vercel.com/krejzy23s-projects",
+    }
+]
