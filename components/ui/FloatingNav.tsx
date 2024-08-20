@@ -78,7 +78,7 @@ export const FloatingNav = ({
             href={navItem.link}
             alt={navItem.name}
             className={cn(
-              "relative justify-center items-center flex-col space-x-1 hover:bg-opacity-80 bg-white hover:dark:bg-opacity-80 dark:bg-black text-white dark:text-white border-neutral-200 dark:border-slate-800"
+              "relative justify-center items-center flex-col space-x-1 hover:bg-opacity-80 bg-white hover:dark:bg-opacity-80 dark:bg-black text-neutral-400 dark:text-white border-neutral-200 dark:border-slate-800"
             )}
           >
             {navItem.imgURL && (
@@ -90,7 +90,7 @@ export const FloatingNav = ({
                 className="block"
               />
             )}
-            <span className="lg:flex lg:text-sm xl:text-md font-light text-white cursor-pointer">
+            <span className="hidden md:flex lg:text-sm xl:text-md font-light text-neutral-400 dark:text-white cursor-pointer">
               {navItem.name}
             </span>
           </Button>

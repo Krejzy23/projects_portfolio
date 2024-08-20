@@ -1,3 +1,23 @@
+"use client"
+
+import {
+  IconAdjustmentsBolt,
+  IconCloud,
+  IconCurrencyDollar,
+  IconEaseInOut,
+  IconHeart,
+  IconHelp,
+  IconRouteAltLeft,
+  IconTerminal2,
+  IconClipboardCopy,
+  IconFileBroken,
+  IconSignature,
+  IconTableColumn,
+  IconBoxAlignRightFilled,
+} from "@tabler/icons-react";
+
+
+
 export const navItems = [
     { name: "Home", link: "#home", imgURL: "/icons/home.svg", },
     { name: "Discover", link: "#discover", imgURL: "/icons/discover.svg", },
@@ -15,7 +35,7 @@ export const products = [
         title: "Photographer portfolio",
         link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
-        "/images/photo.png",
+            "/images/photo.png",
     },
     {
         title: "AI Summerizer Application",
@@ -100,23 +120,71 @@ export const products = [
 
 export const socialMedia = [
     {
-      id:1,
-      img:"/icons/git.svg",
-      link:"https://github.com/Krejzy23",
+        id: 1,
+        img: "/icons/git.svg",
+        link: "https://github.com/Krejzy23",
     },
     {
-      id:2,
-      img:"/icons/whats.svg",
-      link:"",
+        id: 2,
+        img: "/icons/whats.svg",
+        link: "",
     },
     {
-      id:3,
-      img:"/icons/gmail.svg",
-      link:"",
+        id: 3,
+        img: "/icons/gmail.svg",
+        link: "",
     },
     {
-      id:4,
-      img:"/icons/ver.svg",
-      link:"https://vercel.com/krejzy23s-projects",
-    }
-]
+        id: 4,
+        img: "/icons/ver.svg",
+        link: "https://vercel.com/krejzy23s-projects",
+    },
+];
+
+export const features = [
+    {
+      title: "Built for developers",
+      description:
+        "Built for engineers, developers, dreamers, thinkers and doers.",
+      icon: IconTerminal2,
+    },
+    {
+      title: "Ease of use",
+      description:
+        "It's as easy as using an Apple, and as expensive as buying one.",
+      icon: IconEaseInOut,
+    },
+    {
+      title: "Pricing like no other",
+      description:
+        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      icon: IconCurrencyDollar,
+    },
+    {
+      title: "100% Uptime guarantee",
+      description: "We just cannot be taken down by anyone.",
+      icon: IconCloud,
+    },
+    {
+      title: "Multi-tenant Architecture",
+      description: "You can simply share passwords instead of buying new seats",
+      icon: IconRouteAltLeft,
+    },
+    {
+      title: "24/7 Customer Support",
+      description:
+        "We are available a 100% of the time. At least our AI Agents are.",
+      icon: IconHelp,
+    }, 
+    {
+      title: "Money back guarantee",
+      description:
+        "If you do not like EveryAI, we will convince you to like us.",
+      icon: IconAdjustmentsBolt,
+    },
+    {
+      title: "And everything else",
+      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      icon: IconHeart,
+    },
+  ];
