@@ -61,7 +61,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[350vh] md:h-[295vh] h-[265vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
+      className="lg:h-[320vh] md:h-[275vh] h-[245vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -73,7 +73,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse mb-5 space-x-5 lg:space-x-20 md:mb-10 md:space-x-10 lg:mb-20 ">
+        <motion.div className="flex flex-row-reverse space-x-reverse mb-5 space-x-5 lg:space-x-10 md:mb-10 md:space-x-5 lg:mb-10 ">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -82,7 +82,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-5 space-x-5 md:mb-10 md:space-x-10 lg:mb-20 lg:space-x-20 ">
+        <motion.div className="flex flex-row mb-5 space-x-5 md:mb-10 md:space-x-5 lg:mb-10 lg:space-x-10 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -91,7 +91,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse mb-5 space-x-5 space-x-reverse md:mb-10 md:space-x-10 lg:space-x-20">
+        <motion.div className="flex flex-row-reverse mb-5 space-x-5 space-x-reverse md:mb-10 md:space-x-5 lg:space-x-10">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -138,7 +138,7 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
       whileHover={{
         y: -20,
       }}
-      className="group/product h-64 w-[15rem] md:h-[20rem] md:w-[20rem] lg:h-96 lg:w-[25rem] xl:h-[30rem] xl:w-[35rem] relative flex-shrink-0 hover:shadow-2xl"
+      className="group/product h-52 w-52 md:h-72 md:w-72 lg:h-96 lg:w-96 xl:h-[26rem] xl:w-[26rem] relative flex-shrink-0 hover:shadow-2xl"
     >
       <Link
         href={product.link}
