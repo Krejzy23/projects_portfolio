@@ -12,7 +12,7 @@ import { navItems } from "@/data";
 
 const Home =() => {
   return (
-    <main className="relative flex flex-col justify-center items-center overflow-hidden mx-auto px-5 sm:px-10 bg-white dark:bg-black">
+    <main className="relative flex flex-col justify-center items-center overflow-hidden mx-auto sm:px-10 bg-white dark:bg-black">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />

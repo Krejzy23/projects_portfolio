@@ -61,12 +61,12 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex items-center justify-center space-x-4 bg-secondary-color max-w-fit md:min-w-fit fixed z-[5000] top-5 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
+          "flex items-center justify-center space-x-4 max-w-fit md:min-w-fit fixed z-[5000] top-5 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
           className
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgb(253,253,255)",
+          // backgroundColor: "rgb(253,253,255)",
           borderRadius: "1rem",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
@@ -78,7 +78,7 @@ export const FloatingNav = ({
             href={navItem.link}
             alt={navItem.name}
             className={cn(
-              "relative justify-center items-center flex-col space-x-1 hover:bg-opacity-80 bg-white hover:dark:bg-opacity-80 dark:bg-black text-neutral-400 dark:text-white border-neutral-200 dark:border-slate-800"
+              "relative justify-center items-center flex-col space-x-1 hover:bg-opacity-80 hover:dark:bg-opacity-80 bg-transparent border-neutral-200 dark:border-slate-800"
             )}
           >
             {navItem.imgURL && (
@@ -90,7 +90,7 @@ export const FloatingNav = ({
                 className="block"
               />
             )}
-            <span className="hidden md:flex lg:text-sm xl:text-md font-light text-neutral-400 dark:text-white cursor-pointer">
+            <span className="hidden md:flex lg:text-sm xl:text-md font-light text-neutral-600 dark:text-neutral-200 cursor-pointer">
               {navItem.name}
             </span>
           </Button>

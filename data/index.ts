@@ -9,19 +9,14 @@ import {
   IconHelp,
   IconRouteAltLeft,
   IconTerminal2,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-  IconBoxAlignRightFilled,
 } from "@tabler/icons-react";
 
 
 
 export const navItems = [
-    { name: "Home", link: "#home", imgURL: "/icons/home.svg", },
-    { name: "Discover", link: "#discover", imgURL: "/icons/discover.svg", },
-    { name: "Contact", link: "#contact", imgURL: "/icons/contact.svg", },
+    { name: "Home", link: "#home", imgURL: "/icons/home.svg" },
+    { name: "Discover", link: "#discover", imgURL: "/icons/discover.svg" },
+    { name: "Contact", link: "#contact", imgURL: "/icons/contact.svg"},
 ];
 
 export const products = [

@@ -47,9 +47,15 @@ const SkeletonOne = () => {
         variants={variants}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <Image
+          src="/images/person05.webp"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-8 w-8"
+        />
         <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
-          <p className="flex items-center justify-center text-xs">Hello</p>
+          <p className="flex items-center justify-center mt-1 text-xs">Hello</p>
         </div>
       </motion.div>
       <motion.div
@@ -57,17 +63,29 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
-          <p className="flex items-center justify-center text-xs">Hi 🙂</p>
+          <p className="flex items-center justify-center text-xs mt-1">Hi 🙂</p>
         </div>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <Image
+          src="/images/person00.webp"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-8 w-8"
+        />
       </motion.div>
       <motion.div
         variants={variants}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <Image
+          src="/images/person05.webp"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-8 w-8"
+        />
         <div className="w-full bg-gray-100 h-6 rounded-full dark:bg-neutral-900">
-          <p className="flex items-center justify-center text-xs">
+          <p className="flex items-center justify-center mt-1 text-xs">
             Need promo site,can you help?
           </p>
         </div>
@@ -181,14 +199,14 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex-row space-x-2"
     >
       <motion.div
         variants={first}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/images/person02.png"
           alt="avatar"
           height="100"
           width="100"
@@ -203,7 +221,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/images/person01.png"
           alt="avatar"
           height="100"
           width="100"
@@ -221,7 +239,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/images/person03.webp"
           alt="avatar"
           height="100"
           width="100"
@@ -280,11 +298,11 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black relative z-10"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/images/person04.webp"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className="rounded-full h-8 w-8"
         />
         <p className="text-xs text-neutral-500">
           Hi I need an eshop with integrated payment, tax and delivery system. I
@@ -298,7 +316,13 @@ const SkeletonFive = () => {
         <p className="text-xs text-neutral-500">
           If you add two zeros, yes.😂.
         </p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <Image
+          src="/images/person00.webp"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-8 w-8"
+        />
       </motion.div>
       <div
         className={cn(
@@ -322,10 +346,10 @@ export const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Life-giving animations",
     description: (
       <span className="text-sm">
-        Integrated AI for better user experience.
+        Interesting animations for a better user experience.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -344,10 +368,10 @@ export const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Testimonials",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Happy customers is our prority.
       </span>
     ),
     header: <SkeletonFour />,
@@ -356,7 +380,7 @@ export const items = [
   },
 
   {
-    title: "Text Summarization",
+    title: "Easy communications",
     description: (
       <span className="text-sm">
         Summarize your lengthy documents with AI technology.
