@@ -127,7 +127,7 @@ const SkeletonTwo = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex-col space-y-2"
     >
       {widths.map((width, i) => (
         <motion.div
@@ -199,7 +199,7 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex-row space-x-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
       <motion.div
         variants={first}
@@ -357,10 +357,10 @@ export const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "Simplifying your digital experience",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+        "Explore cutting-edge solutions, crafted with passion, to simplify your digital experience and empower your business growth."
       </span>
     ),
     header: <SkeletonThree />,

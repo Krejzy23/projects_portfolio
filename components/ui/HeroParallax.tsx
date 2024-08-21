@@ -61,7 +61,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[350vh] md:h-[295vh] h-[265vh] py-72 overflow-hidden antialiased relative flex flex-col self-auto [perspective:500px] md:py-32 lg:py-10 xl:py-2[transform-style:preserve-3d]"
+      className="lg:h-[350vh] md:h-[295vh] h-[265vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -107,13 +107,15 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl tracking-wider relative mx-auto py-10 md:py-20 px-4 w-full left-0 top-0">
-      <h1 className="dark:text-white  text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold text-stroker-1">
+    <div className="max-w-7xl tracking-widest relative mx-auto py-20 md:py-24 lg:py-28 xl:py-32 px-4 w-full left-0 top-0">
+      <h1 className="dark:text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold">
         The Ultimate <br />
-        <span className="bg-secondary-color font-bold">Projects</span> review
-        page
+        <span className="bg-secondary-color text-stroker-1 font-bold">
+          Projects
+        </span>{" "}
+        review page
       </h1>
-      <p className="max-w-2xl text-base text-md md:text-2xl xl:text-3xl mt-8 dark:text-neutral-200">
+      <p className="max-w-2xl text-base md:text-xl xl:text-3xl mt-6 dark:text-neutral-200 font-medium">
         "Explore innovative projects crafted with the latest technologies and
         frameworks. These works embody a dedication to excellence and creativity
         in development and design."
@@ -136,7 +138,7 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
       whileHover={{
         y: -20,
       }}
-      className="group/product h-64 w-[15rem] md:h-[20rem] md:w-[20rem] lg:h-96 lg:w-[25rem] xl:h-[30rem] xl:w-[35rem] relative flex-shrink-0"
+      className="group/product h-64 w-[15rem] md:h-[20rem] md:w-[20rem] lg:h-96 lg:w-[25rem] xl:h-[30rem] xl:w-[35rem] relative flex-shrink-0 hover:shadow-2xl"
     >
       <Link
         href={product.link}
