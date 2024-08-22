@@ -13,6 +13,7 @@ import Link from "next/link";
 
 type Product = {
   title: string;
+  description: string;
   link: string;
   thumbnail: string;
 };
@@ -61,7 +62,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[320vh] md:h-[275vh] h-[245vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
+      className="lg:h-[320vh] md:h-[285vh] h-[245vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -142,6 +143,8 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
     >
       <Link
         href={product.link}
+        target="_blank"
+        rel="noopener noreferrer"
         className="block group-hover/product:shadow-2xl"
       >
         <Image
@@ -152,10 +155,32 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
           className="object-cover object-left-top absolute h-full w-full inset-0"
         />
       </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
+      <div className="relative inset-0 h-full w-full opacity-0 group-hover/product:opacity-90 bg-black pointer-events-none">
+        <div className="flex flex-col items-center justify-center px-2">
+          <h2 className="flex justify-center items-center opacity-0 group-hover/product:opacity-100 text-white mt-5 font-semibold text-xl md:text-2xl lg:text-3xl">
+            {product.title}
+          </h2>
+          <p className="flex justify-start items-center opacity-0 group-hover/product:opacity-100 text-white mt-2 font-light text-sm md:text-md lg:text-xl md:py-12">
+            {product.description}
+          </p>
+          <div className="absolute w-full bottom-0 left-0">
+            <div className="flex border-t border-white justify-start items-center px-2 py-2">
+              <div className="flex flex-row items-center justify-center w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 rounded-full border-[1px] border-white">
+                <Image
+                  src={"/images/arrow.svg"}
+                  alt={"arrow"}
+                  width={100}
+                  height={100}
+                  className="w-2 h-2 md:w-4 md:h-4 lg:w-6 lg:h-6 object-contain"
+                />
+              </div>
+              <p className="px-2 text-white text-sm md:text-md lg:text-lg xl:text-2xl">
+                Check Live Site
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };
