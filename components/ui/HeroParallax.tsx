@@ -62,7 +62,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[320vh] md:h-[285vh] h-[245vh] py-52 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
+      className="lg:h-[320vh] md:h-[285vh] h-[245vh] py-80 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-32 lg:py-10 xl:py-2 [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -109,14 +109,14 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl tracking-widest relative mx-auto py-20 md:py-24 lg:py-28 xl:py-32 px-4 w-full left-0 top-0">
-      <h1 className="dark:text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold">
+      <h1 className="dark:text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold ">
         The Ultimate <br />
         <span className="bg-secondary-color text-stroker-1 font-bold">
           Projects
         </span>{" "}
         review page
       </h1>
-      <p className="max-w-2xl text-base md:text-xl xl:text-3xl mt-6 dark:text-neutral-200 font-medium">
+      <p className="max-w-2xl text-base md:text-xl xl:text-3xl mt-6 dark:text-neutral-200 font-medium ">
         "Explore innovative projects crafted with the latest technologies and
         frameworks. These works embody a dedication to excellence and creativity
         in development and design."
@@ -155,17 +155,17 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
           className="object-cover object-left-top absolute h-full w-full inset-0"
         />
       </Link>
-      <div className="relative inset-0 h-full w-full opacity-0 group-hover/product:opacity-90 bg-black pointer-events-none">
-        <div className="flex flex-col items-center justify-center px-2">
-          <h2 className="flex justify-center items-center opacity-0 group-hover/product:opacity-100 text-white mt-5 font-semibold text-xl md:text-2xl lg:text-3xl">
+      <div className="relative inset-0 h-full w-full opacity-0 group-hover/product:opacity-90 bg-black bg-grid-neutral-400/[0.08] pointer-events-none">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="flex justify-center items-center opacity-0 group-hover/product:opacity-100 mt-2 text-stroker-1 bg-secondary-color font-medium text-xl md:text-2xl lg:text-3xl">
             {product.title}
           </h2>
-          <p className="flex justify-start items-center opacity-0 group-hover/product:opacity-100 text-white mt-2 font-light text-sm md:text-md lg:text-xl md:py-12">
+          <p className="flex justify-start items-center opacity-0 group-hover/product:opacity-100 px-2 text-neutral-400 mt-2 font-light text-sm md:text-md lg:text-xl md:py-12">
             {product.description}
           </p>
           <div className="absolute w-full bottom-0 left-0">
-            <div className="flex border-t border-white justify-start items-center px-2 py-2">
-              <div className="flex flex-row items-center justify-center w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 rounded-full border-[1px] border-white">
+            <div className="flex border-t border-neutral-400 justify-start px-2 py-2 items-center">
+              <div className="flex flex-row items-center justify-center w-6 h-6 md:w-8 md:h-8 mt-2 lg:w-12 lg:h-12 rounded-full border-[1px] border-neutral-400">
                 <Image
                   src={"/images/arrow.svg"}
                   alt={"arrow"}
@@ -174,8 +174,8 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
                   className="w-2 h-2 md:w-4 md:h-4 lg:w-6 lg:h-6 object-contain"
                 />
               </div>
-              <p className="px-2 text-white text-sm md:text-md lg:text-lg xl:text-2xl">
-                Check Live Site
+              <p className="px-2 text-neutral-400 text-sm md:text-md lg:text-lg xl:text-2xl">
+                Check Live Site{" "}
               </p>
             </div>
           </div>

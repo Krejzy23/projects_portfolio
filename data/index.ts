@@ -113,7 +113,7 @@ export const products = [
             "/images/barber.png",
     },
     {
-        title: "Trip List Application",
+        title: "Trip List",
         description: "Nice 3D Camp list with ThreeJs animations",
         link: "https://trip-list-3-d.vercel.app/",
         thumbnail:
