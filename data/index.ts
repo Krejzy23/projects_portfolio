@@ -24,15 +24,15 @@ export const products = [
     {
         id: 1,
         title: "Eventy",
-        description: "Complex NextJs SaaS Application for planing Events and meetups",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Complex SaaS Application for planing Events and meetups with Stripe.",
+        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/mongodb.svg"],
         link: "https://events-platform-mu.vercel.app/",
         thumbnail:
             "/images/eventl.png",
     },
     {   id: 2,
         title: "Photographer portfolio",
-        description: "Simple and nice website using Html,Css and javascript",
+        description: "Simple and nice website with gallery",
         iconLists: ["/icons/html.svg","/icons/css.svg","/icons/javascript.svg"],
         link: "https://photographer-portfolio-nine.vercel.app/",
         thumbnail:
@@ -41,16 +41,16 @@ export const products = [
     {
         id: 3,
         title: "AI Summerizer",
-        description: "Simple React Application using GPT models for summerize open source artictle",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Application Using GPT Api to Summarize Open Source Articles Using Only a URL.",
+        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/javascript.svg","/icons/gpt.svg"],
         link: "https://summarizer-ai-psi.vercel.app/",
         thumbnail:
             "/images/sumz.png",
     },
     {   id: 4,
         title: "Anime List",
-        description: "NextJs website using server actions and awesome infinite scroll",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Minimal Website Using Server Actions and Awesome Infinite Scroll",
+        iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/fm.svg"],
         link: "https://anime-list-beige.vercel.app/",
         thumbnail:
             "/images/anime.png",
@@ -58,8 +58,8 @@ export const products = [
     {   
         id: 5,
         title: "Live Text Application",
-        description: "NextJs Real-time text editor build by LiveBlocks and user auth",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Application with OAuth and Real-Time Text Editor Powered with LiveBlocks",
+        iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/c.svg"],
         link: "https://live-text-three.vercel.app/",
         thumbnail:
             "/images/live.png",
@@ -67,8 +67,8 @@ export const products = [
     {   
         id: 6,
         title: "IPhone15 Pro UI/UIX",
-        description: "Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Apple iPhone 15 Pro Website Clone with Amazing Animanitons",
+        iconLists: ["/icons/re.svg", "/icons/javascript.svg", "/icons/tail.svg", "/icons/three.svg", "/icons/fm.svg","/icons/gsap.svg"],
         link: "https://i-phone15-pro.vercel.app/",
         thumbnail:
             "/images/iphonepro.png",
@@ -76,8 +76,8 @@ export const products = [
     {
         id: 7,
         title: "BrainWave UI/UIX",
-        description: "Beuatifull website with Framer-motion animations.",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Beautifull website with  animations.",
+        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/javascript.svg","/icons/fm.svg"],
         link: "https://brainwave-ui-uix.vercel.app/",
         thumbnail:
             "/images/brainwave.png",
@@ -85,8 +85,8 @@ export const products = [
     {
         id: 8,
         title: "Podcast Application",
-        description: "AI SaaS platform for creating podcasts with a complete user interface.",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "AI SaaS Platform for Creating Podcasts with a Complete User Interface.",
+        iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/c.svg","/icons/gpt.svg", "/icons/app.svg"],
         link: "https://podcastr-app-ten.vercel.app/",
         thumbnail:
             "/images/podcast.png",
@@ -94,8 +94,8 @@ export const products = [
     {   
         id: 9,
         title: "Image Ai Application",
-        description: "NextJs AI image SaaS platform using MongoDB ,Stripe ,Clerk and more...",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "SaaS platform for editing images by Ai",
+        iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/mongodb.svg","/icons/nodejs.svg","/icons/c.svg"],
         link: "https://image-ai-nu.vercel.app/",
         thumbnail:
             "/images/image.png",
@@ -103,8 +103,8 @@ export const products = [
     {   
         id: 10,
         title: "Metaverse UI/UIX",
-        description: "NextJs Website With Framer Motion & Tailwind CSS",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/fm.svg"],
+        description: "Modern and Colorfull Website with Stunning Animations",
+        iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/javascript.svg", "/icons/fm.svg"],
         link: "https://krejzy-verse.vercel.app/",
         thumbnail:
             "/images/meta.png",
@@ -112,7 +112,7 @@ export const products = [
     {   
         id: 11,
         title: "3D Japan Bistro",
-        description: "Webite page with 3D Animations",
+        description: "Webite page concept with 3D Animations",
         iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/javascript.svg", "/icons/three.svg"],
         link: "https://3-d-sushi-ramen-bistro.vercel.app/",
         thumbnail:
@@ -122,8 +122,8 @@ export const products = [
     {
         id: 12,
         title: "Blog Application",
-        description: "MERN blog with admin dashboard.",
-        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/mongodb.svg","/icons/express.svg", "/icons/nodejs.svg", "/icons/redux.svg"],
+        description: "MERN Blog with Full Authentication and Admin Dashboard.",
+        iconLists: ["/icons/re.svg", "/icons/tail.svg", "/icons/mongodb.svg", "/icons/express.svg", "/icons/nodejs.svg", "/icons/redux.svg","/icons/gsap.svg"],
         link: "https://mern-blog-gmho.onrender.com/",
         thumbnail:
             "/images/blog.png",
@@ -131,7 +131,7 @@ export const products = [
     {
         id: 13,
         title: "Barber Website",
-        description: "Barber promo page",
+        description: "Barber Promo page with Gallery and Appointments",
         iconLists: ["/icons/html.svg","/icons/css.svg","/icons/javascript.svg"],
         link: "https://barber-portfolio.vercel.app/",
         thumbnail:
@@ -149,7 +149,7 @@ export const products = [
     {
         id: 15,
         title: "Clinic Reserve",
-        description: "NextJs app for healthcare platform with complete registration and sms notifications.",
+        description: "Healthcare Platform with Complete Registration and SMS Notifications.",
         iconLists: ["/icons/next.svg", "/icons/tail.svg", "/icons/ts.svg","/icons/c.svg"],
         link: "https://clinic-reserve.vercel.app/",
         thumbnail:

@@ -164,7 +164,7 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
           <p className="flex justify-start items-center opacity-0 group-hover/product:opacity-100 px-2 text-neutral-400 mt-2 font-light text-sm md:text-md lg:text-xl md:py-12">
             {product.description}
           </p>
-          <div className="flex items-center">
+          <div className="flex items-center mt-5">
             {product.iconLists.map((icon, index) => (
               <div
                 className="flex justify-center items-center w-8 h-8 lg:w-10 lg:h-10 border border-white/[0.2] rounded-full bg-black"
@@ -178,8 +178,8 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
             ))}
           </div>
           <div className="absolute w-full bottom-0 left-0">
-            <div className="flex border-t border-neutral-400 justify-start px-2 py-2 items-center">
-              <div className="flex flex-row items-center justify-center w-6 h-6 md:w-8 md:h-8 mt-2 lg:w-12 lg:h-12 rounded-full border-[1px] border-neutral-400">
+            <div className="flex flex-row border-t border-neutral-400 justify-start px-2 py-2 items-center">
+              <div className="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 rounded-full border-[1px] border-neutral-400">
                 <Image
                   src={"/images/arrow.svg"}
                   alt={"arrow"}
@@ -188,7 +188,7 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
                   className="w-2 h-2 md:w-4 md:h-4 lg:w-6 lg:h-6 object-contain"
                 />
               </div>
-              <p className="px-2 text-neutral-400 text-sm md:text-md lg:text-lg xl:text-2xl">
+              <p className="px-2 mt-1 text-neutral-400 text-sm md:text-md lg:text-lg xl:text-2xl">
                 Check Live Site{" "}
               </p>
             </div>
