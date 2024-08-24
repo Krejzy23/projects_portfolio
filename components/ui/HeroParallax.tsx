@@ -16,6 +16,7 @@ type Product = {
   description: string;
   link: string;
   thumbnail: string;
+  iconLists: string[];
 };
 
 type HeroParallaxProps = {
@@ -62,7 +63,7 @@ export const HeroParallax = ({ products }: HeroParallaxProps) => {
   return (
     <div
       ref={ref}
-      className="lg:h-[320vh] md:h-[285vh] h-[245vh] py-80 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-52 lg:py-32 xl:py-2 [transform-style:preserve-3d]"
+      className="lg:h-[320vh] md:h-[285vh] h-[265vh] py-80 overflow-hidden antialiased relative flex flex-col self-auto [perspective:700px] md:py-52 lg:py-32 xl:py-2 [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -163,6 +164,19 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
           <p className="flex justify-start items-center opacity-0 group-hover/product:opacity-100 px-2 text-neutral-400 mt-2 font-light text-sm md:text-md lg:text-xl md:py-12">
             {product.description}
           </p>
+          <div className="flex items-center">
+            {product.iconLists.map((icon, index) => (
+              <div
+                className="flex justify-center items-center w-8 h-8 lg:w-10 lg:h-10 border border-white/[0.2] rounded-full bg-black"
+                key={index}
+                style={{
+                  transform: `translateX(-${5 * index + 2}px)`,
+                }}
+              >
+                <Image src={icon} alt="icon" width={40} height={40} className="p-2" />
+              </div>
+            ))}
+          </div>
           <div className="absolute w-full bottom-0 left-0">
             <div className="flex border-t border-neutral-400 justify-start px-2 py-2 items-center">
               <div className="flex flex-row items-center justify-center w-6 h-6 md:w-8 md:h-8 mt-2 lg:w-12 lg:h-12 rounded-full border-[1px] border-neutral-400">
