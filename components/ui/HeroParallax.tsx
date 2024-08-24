@@ -188,8 +188,8 @@ export const ProductCard = ({ product, translate }: ProductCardProps) => {
                   className="w-2 h-2 md:w-4 md:h-4 lg:w-6 lg:h-6 object-contain"
                 />
               </div>
-              <p className="px-2 mt-1 text-neutral-400 text-sm md:text-md lg:text-lg xl:text-2xl">
-                Check Live Site{" "}
+              <p className="px-2 text-neutral-400 text-sm md:text-md lg:text-lg xl:text-2xl">
+                click to check{" "}<span className="bg-secondary-color">Live Site</span>
               </p>
             </div>
           </div>

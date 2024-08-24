@@ -19,7 +19,7 @@ export function GoogleGeminiEffectDemo() {
 
   return (
     <div
-      className="h-[100vh] w-full rounded-md relative pt-40 overflow-clip"
+      className="h-[100vh] w-full rounded-md relative overflow-clip"
       style={{ overflowY: "auto" }} // Přidáno overflowY auto pro povolení svislého scrollování
       ref={ref}
     >
