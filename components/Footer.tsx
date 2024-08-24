@@ -4,7 +4,7 @@ import { socialMedia } from "@/data";
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="">
+      <div className="-mt-40">
         <div className="h-[10rem] w-full dark:bg-grid-small-white/[0.5] bg-grid-small-black/[0.3] relative flex items-center justify-center">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div className="flex flex-col justify-between items-center">
